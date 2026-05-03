@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "Bash(glab auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git *)",
+      "Bash(gh repo *)",
+      "Bash(glab repo *)",
+      "Bash(GITLAB_HOST=gitlab.acreetionos.org glab repo *)"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Messenger
+Comment=Facebook Messenger (Tauri/WebKitGTK)
+Exec=messenger-pwa-tauri %U
+Icon=messenger-pwa-tauri
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;
+StartupNotify=true
+MimeType=x-scheme-handler/messenger;
