@@ -1,5 +1,6 @@
 (function() {
-    Object.defineProperty(navigator, 'webdriver', { get: () => undefined, configurable: true });
+    delete navigator.webdriver;
+
     Object.defineProperty(navigator, 'platform', { get: () => 'Linux x86_64', configurable: true });
     Object.defineProperty(navigator, 'vendor', { get: () => 'Google Inc.', configurable: true });
     Object.defineProperty(navigator, 'languages', { get: () => ['en-US','en'], configurable: true });
@@ -12,6 +13,11 @@
     if (!window.chrome.runtime) {
         window.chrome.runtime = { connect: function(){}, sendMessage: function(){}, id: undefined };
     }
+
+    delete window.__TAURI__;
+    delete window.__TAURI_INTERNALS__;
+    delete window.ipc;
+    delete window.rpc;
 
     const origQuery = window.Permissions && Permissions.prototype.query;
     if (origQuery) {

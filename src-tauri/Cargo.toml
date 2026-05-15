@@ -17,6 +17,6 @@ webkit2gtk = "2.0"
 tauri-build = { version = "2", features = [] }
 
 [profile.release]
-lto = true
+lto = "thin"
 opt-level = "s"
 strip = true
